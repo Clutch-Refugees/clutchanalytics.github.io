@@ -6,10 +6,15 @@ layout: default
 {% assign author = site.authors[page.author] %}
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
+
   <ul class="post-metadata">
     <li>{{ page.date | date_to_string }}</li>
-    <li>{{ author.name }}</li>
+    <li class="author-info">
+      <img src="http://gravatar.com/avatar/{{ author.gravatar }}?s=18"/>
+      {{ author.name }}
+    </li>
   </ul>
+
   {{ content }}
 </div>
 

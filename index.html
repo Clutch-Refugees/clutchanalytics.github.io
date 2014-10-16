@@ -15,7 +15,10 @@ title: Home
 
     <ul class="post-metadata">
       <li>{{ post.date | date_to_string }}</li>
-      <li><img src="http://gravatar.com/avatar/{{ author.gravatar }}?s=18"/> {{ author.name }}</li>
+      <li class="author-info">
+        <img src="http://gravatar.com/avatar/{{ author.gravatar }}?s=18"/>
+        {{ author.name }}
+      </li>
     </ul>
 
     {{ post.content }}
