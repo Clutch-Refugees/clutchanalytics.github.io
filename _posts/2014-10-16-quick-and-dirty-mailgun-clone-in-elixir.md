@@ -304,7 +304,32 @@ end
 {% endhighlight %}
 
 
-On the whole, the `MailToJson.SmtpHandler` looks like [this](https://github.com/HashNuke/mail-to-json/blob/5641df4d4eff817bd3601764f3db36afccdb0080/lib//mail_to_json/smtp_handler.ex).
+With a few other necessary additions,  [this](https://github.com/HashNuke/mail-to-json/blob/5641df4d4eff817bd3601764f3db36afccdb0080/lib//mail_to_json/smtp_handler.ex) is `MailToJson.SmtpHandler`.
+
+
+### JSON data in the webhook
+
+The JSON data that is POSTed to the webhook url will look like this:
+
+{% highlight javascript %}
+{
+  "From": {
+    "name": "John Doe",
+    "email": "john@example.com"
+  },
+  "To": [
+    {
+      "name": "Jane Doe",
+      "email": "jane@example.com"
+    }
+  ],
+  "Subject": "Hello subject",
+  "plain_body": "Hello body\r\n",
+  "html_body": "<div dir=\"ltr\">Hello body</div>\r\n",
+  "Date": "Thu, 16 Oct 2014 19:33:12 +0530",
+  "Message-ID": "<CAEy2aia+pK5k3UqdcEPqB2JiLCRMQvyBWXtOAbV3Wmuo2QBtog@mail.gmail.com>"
+}
+{% endhighlight %}
 
 
 ### Other miscellaneous modules and functions
