@@ -305,13 +305,13 @@ On the whole, the `MailToJson.SmtpHandler` looks like [this](https://github.com/
 
 ### Other miscellaneous modules and functions
 
-* To handle parsing mail data that is handed to us by `gen_smtp`, we have a [`MailToJson.MailParser`](https://github.com/HashNuke/mail-to-json/blob/5641df4d4eff817bd3601764f3db36afccdb0080/lib/mail_to_json/mail_parser.ex) module. This is responsible for handing us an Elixir map of data, that we can encode to JSON.
+* [MailToJson.MailParser](https://github.com/HashNuke/mail-to-json/blob/5641df4d4eff817bd3601764f3db36afccdb0080/lib/mail_to_json/mail_parser.ex) module - To handle parsing mail data that is handed to us by `gen_smtp`, we have a . This is responsible for handing us an Elixir map of data, that we can encode to JSON
 
-* In order to send email in a sane way, I've added `MailToJson.send_mail/4`.
+* [MailToJson.Utils](https://github.com/HashNuke/mail-to-json/blob/5641df4d4eff817bd3601764f3db36afccdb0080/lib/mail_to_json/utils.ex) module The above required some utility functions in `lib/mail_to_json/utils.ex`.
 
-* The above required some utility functions in `lib/mail_to_json/utils.ex`, which look like this [this](https://github.com/HashNuke/mail-to-json/blob/5641df4d4eff817bd3601764f3db36afccdb0080/lib/mail_to_json/utils.ex).
+* `MailToJson.send_mail/4` - added this in order to send email in a sane way.
 
-* Also added `MailToJson.test_mail/0` as a short-hand to send a test mail from and to localhost itself. This helps in testing and development.
+* `MailToJson.test_mail/0` - added this as a short-hand to send test mails from and to localhost itself. This helps in testing and development.
 
 ## Closing notes
 
