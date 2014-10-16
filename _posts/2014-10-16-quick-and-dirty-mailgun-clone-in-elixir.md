@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A quick and dirty MailGun clone in Elixir
+title: A quick and dirty Mailgun clone in Elixir
 author: HashNuke
 ---
 
@@ -30,7 +30,7 @@ I made up that request-response. `DUDE` is not an SMTP verb. But there are many 
 
 > I apologize if I've convinced you that SMTP is very simple. There's much more to it. And our fellow humans have done great work to extend it by building stuff for it or on top of it. You can read more [here](http://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#Related_Requests_For_Comments).
 
-Sadly, setting up an SMTP server to handle incoming email still needs a great [bullet-proof guide](http://iafonov.github.io/blog/hardcore-email-infrastructure-setup.html). There are services like [MailGun](http://mailgun.com), [Postmark](http://postmarkapp.com), etc, that make it easier for developers to handle incoming mail for apps. They receive incoming mail on your behalf and POST them as JSON to your app.
+Sadly, setting up an SMTP server to handle incoming email still needs a great [bullet-proof guide](http://iafonov.github.io/blog/hardcore-email-infrastructure-setup.html). There are services like [Mailgun](http://mailgun.com), [Postmark](http://postmarkapp.com), etc, that make it easier for developers to handle incoming mail for apps. They receive incoming mail on your behalf and POST them as JSON to your app.
 
 ## Building an SMTP server in Elixir
 
