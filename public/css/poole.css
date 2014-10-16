@@ -345,11 +345,25 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Meta data line below post title */
-.post-date {
-  display: block;
+.post-metadata {
   margin-top: -.5rem;
   margin-bottom: 1rem;
+  padding: 0;
   color: #9a9a9a;
+}
+
+.post-metadata li {
+  display: inline;
+}
+
+.post-metadata li:not(:first-child) {
+  margin-left: .3rem;
+  font-style: italic;
+}
+
+.post-metadata li:not(:first-child):before {
+  content: '\2022';
+  margin-right: .5rem;
 }
 
 /* Related posts */
