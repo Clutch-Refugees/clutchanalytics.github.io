@@ -1,4 +1,11 @@
 .post .post-metadata .author-info img {
   display: inline;
-  margin: 0rem;
+  margin: 0em 0em -0.1em 0em;
+}
+
+
+.post .post-metadata .author-info a {
+  color: #0066cc;
+  font-style: normal;
+  font-size: 90%;
 }

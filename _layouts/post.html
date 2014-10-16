@@ -9,9 +9,16 @@ layout: default
 
   <ul class="post-metadata">
     <li>{{ page.date | date_to_string }}</li>
+
     <li class="author-info">
       <img src="http://gravatar.com/avatar/{{ author.gravatar }}?s=18"/>
-      {{ author.name }}
+      {% if author.github %}
+        <a href="https://github.com/{{ author.github }}">{{ author.name }}</a>
+      {% elsif author.twitter %}
+        <a href="https://twitter.com/{{ author.twitter }}">{{ author.name }}</a>
+      {% else %}
+        {{ author.name }}
+      {% endif %}
     </li>
   </ul>
 

@@ -5,24 +5,31 @@ title: Home
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
     {% assign author = site.authors[post.author] %}
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    <div class="post">
+      <h1 class="post-title">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h1>
 
-    <ul class="post-metadata">
-      <li>{{ post.date | date_to_string }}</li>
-      <li class="author-info">
-        <img src="http://gravatar.com/avatar/{{ author.gravatar }}?s=18"/>
-        {{ author.name }}
-      </li>
-    </ul>
+      <ul class="post-metadata">
+        <li>{{ post.date | date_to_string }}</li>
 
-    {{ post.content }}
-  </div>
+        <li class="author-info">
+          <img src="http://gravatar.com/avatar/{{ author.gravatar }}?s=18"/>
+          {% if author.github %}
+            <a href="https://github.com/{{ author.github }}">{{ author.name }}</a>
+          {% elsif author.twitter %}
+            <a href="https://twitter.com/{{ author.twitter }}">{{ author.name }}</a>
+          {% else %}
+            {{ author.name }}
+          {% endif %}
+        </li>
+      </ul>
+
+      {{ post.content }}
+    </div>
   {% endfor %}
 </div>
 
