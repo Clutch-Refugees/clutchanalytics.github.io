@@ -3,7 +3,7 @@ layout: post
 title: A quick and dirty MailGun clone in Elixir
 ---
 
-> If you want to go straight to the source code, [here](https://github.com/HashNuke/mail-to-json)!
+> If you want to go straight to the source code, [here it is](https://github.com/HashNuke/mail-to-json) ~!
 
 ## Email as an API
 
@@ -310,7 +310,7 @@ On the whole, the `MailToJson.SmtpHandler` looks like [this](https://github.com/
 
 * The above required some utility functions in `lib/mail_to_json/utils.ex`, which look like this [this](https://github.com/HashNuke/mail-to-json/blob/5641df4d4eff817bd3601764f3db36afccdb0080/lib/mail_to_json/utils.ex).
 
-* Also added `MailToJson.test_mail/0` as a short-hand to send a test mail from localhost itself. This helps in testing and development.
+* Also added `MailToJson.test_mail/0` as a short-hand to send a test mail from and to localhost itself. This helps in testing and development.
 
 ## Closing notes
 
@@ -320,7 +320,7 @@ There's no security. There's no myriad of configuration options. We don't yet ha
 
 We can handle HTML and plain text emails.
 
-This is under 300 lines of code. Along with primitives that come with OTP itself, Erlang and Elixir libraries have made it very easy for us to build a stripped down version of a relatively complex service.
+This is bare-bones and under 300 lines of code. Along with primitives that come with OTP itself, Erlang and Elixir libraries have made it very easy for us to build a stripped down version of a relatively complex service.
 
 ## References
 
