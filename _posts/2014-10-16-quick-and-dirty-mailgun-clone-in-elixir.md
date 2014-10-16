@@ -327,7 +327,7 @@ We can handle HTML and plain text emails.
 
 This is bare-bones and under 300 lines of code. Along with primitives that come with OTP itself, Erlang and Elixir libraries have made it very easy for us to build a stripped down version of a relatively complex service.
 
-## References
+## Reference
 
 * [SMTP commands](http://the-welters.com/professional/smtp.html)
 * [SMTP error codes](http://www.greenend.org.uk/rjk/tech/smtpreplies.html)
