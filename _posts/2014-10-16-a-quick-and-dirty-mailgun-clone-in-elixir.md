@@ -324,5 +324,5 @@ This is under 300 lines of code. Along with primitives that come with OTP itself
 
 ## References
 
-* SMTP commands - <http://the-welters.com/professional/smtp.html>
-* SMTP error codes - <http://www.greenend.org.uk/rjk/tech/smtpreplies.html>
+* [SMTP commands](http://the-welters.com/professional/smtp.html)
+* [SMTP error codes](http://www.greenend.org.uk/rjk/tech/smtpreplies.html)
