@@ -347,7 +347,7 @@ The JSON data that is POSTed to the webhook url will look like this:
 
 ## Closing notes
 
-There's no security. There's no myriad of configuration options. We don't yet handle attachments. My console screams a few warnings about unimplemented functions for the `:gen_smtp_server_session` behaviour. But...
+No security. No myriad of configuration options. We don't yet handle attachments. My console screams a few warnings about unimplemented functions for the `:gen_smtp_server_session` behaviour. But...
 
 **We built it!**
 
