@@ -8,7 +8,7 @@ relative_permalinks: true
 
 # Setup
 title:            Clutch Analytics
-tagline:          'Building it since 2013'
+tagline:          'Building things since 2013'
 description:      "Now, more than ever.\nWe build solutions.\nMore human than human.\nNuke it from orbit."
 url:              http://clutchanalytics.com/
 baseurl:          /
