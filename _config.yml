@@ -10,19 +10,18 @@ relative_permalinks: true
 title:            Clutch Analytics
 tagline:          'Building it since 2013'
 description:      "Now, more than ever.\nWe build solutions.\nMore human than human.\nNuke it from orbit."
-url:              http://clutchanalytics.com/
+url:              http://clutchanalytics.com
 baseurl:          /
 
 author:
   name:           'Clutch Analytics'
-  url:            https://twitter.com/clutchanalytics
+  url:            https://www.linkedin.com/company/clutch-analytics
 
 paginate:         5
 
 # Custom vars
 github:           https://github.com/clutchanalytics
 email:            austin@clutchanalytics.com
-
 
 authors:
   HashNuke:

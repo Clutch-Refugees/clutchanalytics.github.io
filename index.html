@@ -7,6 +7,8 @@ title: Home
   {% for post in paginator.posts %}
     {% assign author = site.authors[post.author] %}
     <div class="post">
+      <img class="post-avatar" src="http://gravatar.com/avatar/{{ author.gravatar }}">
+
       <h1 class="post-title">
         <a href="{{ post.url }}">
           {{ post.title }}
@@ -16,8 +18,7 @@ title: Home
       <ul class="post-metadata">
         <li>{{ post.date | date_to_string }}</li>
 
-        <li class="author-info">
-          <img src="http://gravatar.com/avatar/{{ author.gravatar }}?s=18"/>
+        <li>
           {% if author.github %}
             <a href="https://github.com/{{ author.github }}">{{ author.name }}</a>
           {% elsif author.twitter %}

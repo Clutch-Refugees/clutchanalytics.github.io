@@ -333,6 +333,14 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 4em;
 }
 
+.post-avatar {
+  float: right;
+  margin-left: 1rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title,
@@ -358,12 +366,11 @@ tbody tr:nth-child(odd) th {
 
 .post-metadata li:not(:first-child) {
   margin-left: .3rem;
-  font-style: italic;
 }
 
 .post-metadata li:not(:first-child):before {
   content: '\2022';
-  margin-right: .5rem;
+  margin-right: .3rem;
 }
 
 /* Related posts */

@@ -20,8 +20,11 @@ layout: null
    <title>{{ post.title }}</title>
    <link href="{{ site.url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
+   {% assign author = site.authors[post.author] %}
    <author>
-     <name>{{ post.author }}</name>
+     <name>{{ author.name }}</name>
+     <uri>{{ author.web }}</uri>
+     <email>{{ author.email }}</email>
    </author>
    <id>{{ site.url }}{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
