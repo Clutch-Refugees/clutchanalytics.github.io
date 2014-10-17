@@ -314,7 +314,7 @@ With a few other necessary additions,  [this](https://github.com/HashNuke/mail-t
 
 The JSON data that is POSTed to the webhook url will look like this:
 
-{% highlight javascript %}
+{% highlight json %}
 {
   "From": {
     "name": "John Doe",
