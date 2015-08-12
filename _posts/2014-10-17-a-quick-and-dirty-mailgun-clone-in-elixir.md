@@ -23,7 +23,7 @@ Email works. What more? If you accept incoming mail from your users, it comes wi
 
 A typical request-response might look like the following:
 
-    DUDE whats up
+    DUDE whats up?
     200 I am fine
 
 I made up that request-response. `DUDE` is not an SMTP verb. But there are many others like `HELO`, `RCPT`, `DATA`, etc.
