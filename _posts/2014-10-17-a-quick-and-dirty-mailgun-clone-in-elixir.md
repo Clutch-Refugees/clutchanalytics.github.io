@@ -6,7 +6,7 @@ author: HashNuke
 
 > If you want to go straight to the source code, [here it is](https://github.com/HashNuke/mail-to-json) ~!
 
-## Email as an API
+## Email as an API...
 
 Email is one of the oldest social networks. It has a very large user base and it still works. Want to share news about your new born? Share sales report with your team? Invite people to a party?
 
