@@ -1,52 +1,514 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<html lang="en">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-    {% assign author = site.authors[post.author] %}
-    <div class="post">
-      <img class="post-avatar" src="http://gravatar.com/avatar/{{ author.gravatar }}">
 
-      <h1 class="post-title">
-        <a href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h1>
+<head>
+    <!--<meta charset="UTF-8">-->
+    <!--<meta name="viewport" content="width = 1050, user-scalable = no" />-->
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">-->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <!--<meta name="HandheldFriendly" content="true">-->
 
-      <ul class="post-metadata">
-        <li>{{ post.date | date_to_string }}</li>
+    <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 
-        <li>
-          {% if author.github %}
-            <a href="https://github.com/{{ author.github }}">{{ author.name }}</a>
-          {% elsif author.twitter %}
-            <a href="https://twitter.com/{{ author.twitter }}">{{ author.name }}</a>
-          {% else %}
-            {{ author.name }}
-          {% endif %}
-        </li>
-      </ul>
+    <title>Clutch Analytics</title>
 
-      {{ post.content }}
+    <link href="stylesheet/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
+
+    <link href="stylesheet/double-page.css" rel="double-page" type="text/css" media="screen">
+
+    <link href="stylesheet/normalize.css" rel="normalize" type="text/css" media="screen">
+
+
+
+
+</head>
+    <body>
+
+    <div class="video-container">
+
+        <video autoplay loop  id="video-bg" src="video/cam_test.mp4" type="ca_bg/mp4"></video>
     </div>
-  {% endfor %}
-</div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+        <header>
+
+                <div id="logo-top">
+
+                    <div class="logo">
+
+                        <a href="/" >
+                            <img src="images/CAlogo.png" alt="logo" id="logo">
+                        </a>
+
+                    </div>
+
+                    <div id="top">
+
+                        <div id="top-title">
+                            <h1>Clutch Analytics? Never Heard of &lsquo;Em.</h1>
+                        </div><!-- end of top-title -->
+
+                        <div id="top-prg">
+                            <p>Clutch Analytics&#8482 is the digital manufacturing arm of <a href="https://www.windhaveninsurance.com/" target="_blank"><u>Windhaven&#8482 Insurance</u></a>, located in Austin, TX. This
+                                crack team is dedicated to the invention and production of technologies that solve real customer and local
+                                independent agent needs in ways that break the norms and conventions of the insurance industry.</p>
+                        </div><!-- end of top-title -->
+
+                        <div id="view-open-positions">
+                            <!--<a href="" class="button" target="_blank">View Open Positions</a>-->
+                        </div><!-- end of view-open-positions -->
+
+                    </div><!-- end of top -->
+
+                </div>
+
+        </header>
+
+
+
+
+            <!--<div id="gray">-->
+
+                <div class="flipbook-viewport">
+                    <div class="container">
+
+                        <div class="flipbook">
+
+
+
+
+
+
+                         </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            <div id="green">
+
+                <div id="green-title">
+
+                    <h1>Our Approach to Development</h1>
+
+                </div><!-- end of green-title -->
+
+                <div id="green-prg">
+
+                    <p>The core of our approach is open source &#8211 both in the technology we use to build products and in the environment we foster among ourselves.
+                        We know the value of individual talent, but also recognize that no one of us is as good as the whole team.</p>
+
+                </div><!-- end of green-prg -->
+
+                <div id="green-github">
+
+
+                    <a href= "https://github.com/clutchanalytics" target="_blank" id="github-feed"><img src="images/githubfeed.png"/></a>
+
+                </div><!-- end of green-github -->
+
+            </div><!-- end of green -->
+
+
+
+
+            <!--  gray2 -->
+            <div id="gray2">
+
+                <div id="gray2-title">
+
+                    <h1>Our Purpose: <br/> Build Really Cool Shit.</h1>
+
+                </div><!-- end of gray2-title -->
+
+                <div id="gray2-prg">
+
+                    <p>Let's be more specific. We want to be recognized as the special sauce that propels Windhaven&#8482 Insurance
+                        and its brands to national prominence in the insurance/financial services industry. Think of us as the
+                        souped-up Intel Inside or the AMG in Mercedes. There you have it. Let's go be purposeful.</p>
+
+                </div><!-- end of gray2-title -->
+
+            </div> <!-- end of gray2 -->
+
+
+
+
+
+
+            <div id="blue2">
+
+                <div id="blue2-container">
+
+                    <section id="column-blue2">
+
+                        <div id="blue2-title">
+
+                            <h1>Working at Clutch</h1>
+
+                        </div><!-- end of blue2-title -->
+
+                        <div id="blue2-prg">
+
+                            <p>We're looking for A-Players that have the
+                                digital chops to manufacture stuff that will help
+                                Windhaven&#8482 Insurance continue its meteoric
+                                growth as one of the fastest growing auto
+                                insurance carriers in the country. We consider
+                                A-Player not only to have incredible talent, but
+                                yearn to be part of a unique culture that is built
+                                on Core Values that actually mean something
+                                and drives how we work and succeed.</p>
+
+                        </div><!-- end of blue2-title -->
+
+                        <div id="join-the-clutch-team">
+
+                            <!--<a href="" class="button">Join The Clutch Team</a>-->
+
+                        </div><!-- end of join-the-clutch-team -->
+
+                    </section><!-- end of column-blue2 -->
+
+
+                    <aside>
+
+                        <ul>
+                            <li id="blue2-list-title"><b>What we look for:</b></li>
+                            <li>Reliability</li>
+                            <li>Frugality</li>
+                            <li>For the masses not the few</li>
+                            <li>Problem solvers</li>
+                        </ul>
+
+                        <ul>
+                            <li id="blue2-list2-title"><b>What we don&rsquo;t tolerate:</b></li>
+                            <li style="text-decoration: line-through;">Half-assed</li>
+                            <li style="text-decoration: line-through;">Wasteful</li>
+                            <li style="text-decoration: line-through;">Prima Donnas</li>
+                            <li style="text-decoration: line-through;">Problem children</li>
+                        </ul>
+
+                    </aside>
+
+                </div>
+
+            </div><!-- end of blue2 -->
+
+
+
+
+            <div id="tools">
+
+                <div id="tools-title">
+
+                    <h1>The Tools We Use</h1>
+
+                </div><!-- end of tools-title -->
+
+                <div id="tools-logos">
+
+                    <div id="logos">
+
+                        <img src="tools_img/Adobe_Creative_Cloud.png" alt="Adobe_Creative_Cloud">
+                        <img src="tools_img/AngularJS.png" alt="AngularJS">
+                        <img src="tools_img/hangouts.png" alt="Hangouts">
+                        <img src="tools_img/JavaScript.png" alt="JavaScript">
+                        <img src="tools_img/JIRA.png" alt="JIRA">
+                        <img src="tools_img/slack.png" alt="Slack">
+                        <img src="tools_img/ubuntu.png" alt="Ubuntu">
+                        <img src="tools_img/JSON.png" alt="JSON">
+                        <!--</br>-->
+                        <img src="tools_img/linux.png" alt="linux">
+                        <img src="tools_img/MongoDB.jpg" alt="MongoDB">
+                        <img src="tools_img/nodejs.png" alt="Nodejs">
+                        <img src="tools_img/skype.png" alt="Skype">
+                        <img src="tools_img/confluence.png" alt="Confluence">
+                        <img src="tools_img/couchbase.png" alt="Couchbase">
+                        <img src="tools_img/ws.jpg" alt="Webstorm">
+                        <img src="tools_img/jenkins.png" alt="Jenkins">
+
+                    </div>
+
+                </div><!-- end of tools-logos -->
+
+            </div><!-- end of tools -->
+
+
+
+
+            <div id="green2">
+
+                <section id="column-green2">
+
+                    <div id="green2-title">
+                        <h1>Mentorship</h1>
+                    </div>
+
+                    <div id="green2-prg">
+                        <p>If you decide to work with us, you will be challenged. Your digital chops honed: front-end, back-end and
+                            everything in-between along with some really good people to boot. You'll be more marketable. And if we
+                            all do our jobs: reconized for building cool shit and realizing the company you imagined. (With rewards
+                            given for your production and loyalty).</p>
+                    </div>
+
+
+                    <!-- Jorge Section-->
+                    <div class="green2-row">
+                        <div id="jorge-img">
+                            <img src="images/jorge.png" alt="Jorge Garcia">
+                        </div>
+                        <div id="jorge-name">
+                            <p>Jorge A. Garcia</p>
+                        </div>
+                        <div id="jorge-bio">
+                            <p>Jorge has been working in technology over 29 years, and simply considers himself a Technologist.
+                                Throughout his career, the diverse challenges and experiences have helped produce a disciplined
+                                approach to resolving business issues. Jorge works with senior decision-makers to develop strategic
+                                technology plans, helping companies build a competitive edge and maximize their return on investment.</br></br>
+
+                                He has been preaching the concept of Intent Driven Design over the last few years: in presentations
+                                and invitations to speak at conferences. He believes the application should simplify the overall process,
+                                guiding the user to quicker decisions and faster resolution.</p>
+                        </div>
+                        <div id="jorge-logo">
+                            <!--<p>SPACE FOR LOGOS HERE?</p>-->
+                        </div>
+                    </div><!-- end of green2-row -->
+
+
+                    <!-- David Section-->
+                    <div class="green2-row2">
+                        <div id="david-img">
+                            <img src="images/david.png" alt="David Mallon">
+                        </div>
+                        <div id="david-name">
+                            <p>David Mallon</p>
+                        </div>
+                        <div id="david-bio">
+                            <p>David is an agile and progressive Software Architect, Specializing in full stack web development.
+                                He has specialized in BPM, Rules based processing, Workflow Management,  and has over 11 years of Insurance Industry experience.</br></br>
+
+                                Overall his passion is in software development and design. He has participated in massive
+                                projects with over 300 stakeholders to small micro projects with agile teams. From Lead Software Architect
+                                to Senior Developer, the roles may change &#8211 and his passion for Software persists. </p>
+                        </div>
+
+                        <div id="david-logo">
+                            <!--<p>SPACE FOR LOGOS HERE?</p>-->
+                        </div>
+
+                    </div><!-- end of green2-row2 -->
+
+
+                </section><!-- end of column-green2 -->
+
+            </div><!-- end of green2 -->
+
+
+
+
+            <div id="blue">
+
+                <iframe
+                        width="350"
+                        height="350"
+                        frameborder="0" style="border:0; padding-bottom: 30px; margin: 10px 25px 0 75px; float: left;"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDls7BXqWA0NF-RlenuFIBCIKURcvcEbgM
+        &q=8310-1 N. Capital of Texas Hwy.,Austin+TX" allowfullscreen>
+                </iframe>
+
+
+                <div id="blue-title">
+
+                    <h1>Established 2012 <br/> Austin,TX.</h1>
+
+                </div>
+
+                <div id="blue-prg">
+
+                    <p>Austin's pretty cool: the music, the migas, the weirdness, Willie, the
+                        lakes, the Capital, the people &#8211 especially the people. People who
+                        love to build, learn, tinker, tear down and create. Our kind of people. </p>
+                    <p>The book above tells our story. What we're all about &#8211 what we do,
+                        our values and why we come to the office every day. We hope it
+                        inspires you. Maybe you'll join. Maybe you won't. Maybe you'll pass
+                        it along to some smart creative person who is looking to grow and to
+                        build that company you just imagined.</p>
+
+                </div>
+
+            </div> <!-- end of content-blue -->
+
+
+
+
+            <footer>
+                <div id="footer-row">
+
+                    <ul id="left-row">
+                        <li>&copy;2015 Clutch Analytics</li>
+                        <!--<li>info@clutchanalytics.com</li>-->
+                        <!--<li>XXX.XXX.XXXX</li>-->
+                    </ul>
+
+                    <div class="column">
+                        <a href="https://www.linkedin.com/company/clutch-analytics" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                        <!--<a href="https://twitter.com/clutchanalytics" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>-->
+                        <!--<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>-->
+                    </div>
+                </div>
+            </footer><!-- end of footer -->
+
+
+
+
+            <!-- GPS Showing current location-->
+
+            <script>
+
+                function initMap() {
+                    var myLatLng = {lat: -25.363, lng: 131.044};
+
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 4,
+                        center: myLatLng
+                    });
+
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Hello World!'
+                    });
+                }
+
+            </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
+
+
+
+
+            <!-- Flip book -->
+
+            <script type="text/javascript">
+
+                function loadApp() {
+
+                    var flipbook = $('.flipbook');
+
+
+                    // Check if the CSS was already loaded
+
+                    if (flipbook.width()==0 || flipbook.height()==0) {
+                        setTimeout(loadApp, 10);
+                        return;
+                    }
+
+                    $('.flipbook .double').scissor();
+
+                    // Create the flipbook
+
+
+                    flipbook.turn({
+                        // Elevation
+
+                        elevation: 50,
+
+                        // Enable gradients
+
+                        gradients: true,
+
+                        // Auto center this flipbook
+
+                        autoCenter: true
+
+                    });
+//
+                    flipbook.turn('peel',"br");
+
+
+
+                }
+
+
+                    var book = $('.flipbook');
+//                console.log("flip book", book);
+                    if (window.matchMedia('(max-width: 1024px)').matches) {
+
+                        book.append("<div class='page' style='background-image:url(pages2/1.png)'></div>\
+                        <div class='double' style='background-image:url(pages2/3.png)'></div>\
+                        <div class='double' style='background-image:url(pages2/6.png)'></div>\
+                        <div class='double' style='background-image:url(pages2/8.png)'></div>\
+                        <div class='double' style='background-image:url(pages2/16.png)'></div>\
+                        <div class='double' style='background-image:url(pages2/17.png)'></div>\
+                        <div class='page' style='background-image:url(pages2/21.png)'></div>");
+
+                    } else {
+                        book.append(
+                                "<div class='page' style='background-image:url(pages2/1.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/2.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/3.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/4.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/5.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/6.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/7.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/8.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/9.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/10.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/11.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/12.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/13.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/14.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/15.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/16.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/17.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/18.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/19.png)'></div>\
+                            <div class='double' style='background-image:url(pages2/20.png)'></div>\
+                            <div class='page' style='background-image:url(pages2/21.png)'></div>");
+                    }
+
+
+
+
+                function isMobile() {
+                    try{ document.createEvent("TouchEvent"); return true; }
+
+                    catch(e){ return false; }
+                }
+
+                // Load the HTML4 version if there's not CSS transform
+
+                yepnope({
+                    test : Modernizr.csstransforms,
+                    yep: ['lib/turn.js'],
+                    nope: ['lib/turn.html4.min.js'],
+                    both: ['lib/scissor.min.js', 'stylesheet/double-page.css'],
+                    complete: loadApp
+                });
+
+            </script>
+
+
+            <!--[if lt IE 9]>
+            <script>
+                document.createElement('video');
+            </script>
+            <![endif]-->
+
+    </body>
+</html>

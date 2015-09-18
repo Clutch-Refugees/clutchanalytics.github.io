@@ -1,0 +1,517 @@
+/*
+
+       Style Sheet css
+
+       Colors:
+       ############
+
+       Black:           #000000
+       Dark Gray:       #444444
+       light Green:     #a1d7c2
+       Light Blue:      #6eb0cb
+       White:           #ffffff
+
+*/
+
+/*  ======================
+       General Styles
+    ======================  */
+html {
+       -webkit-font-smoothing: antialiased;
+       text-rendering: optimizeLegibility;
+}
+
+body {
+       font-family:  "Lato","Helvetica Neue", Helvetica, Arial, sans-serif;
+       font-size: 14px;
+       line-height: 20px;
+       color: black;
+       background-color: #000000;
+       margin: 0;
+}
+
+/*  ======================
+       Typography
+    ======================  */
+h1, h2, h3 {
+       font-family: 'Montserrat', sans-serif;
+       font-weight: bold;
+       margin: 0;
+       line-height: 45px;
+
+}
+
+h4, h5, h6 {
+       font-weight: bold;
+       margin: 5px 0 5px 0;
+}
+
+h1 {
+       font-size: 35px;
+}
+
+h3 {
+       font-size: 24px;
+       margin: 0;
+}
+
+p {
+       margin: 20px 0 10px 0;
+       font-size: 20px;
+       line-height: 30px;
+}
+
+a {
+       margin: 0 0 10px 0;
+       font-size: 22px;
+       line-height: 30px;
+       text-decoration: none;
+       color: #ffffff;
+}
+
+ul {
+       margin: 0 0 10px 0;
+       font-size: 22px;
+       line-height: 30px;
+       list-style: none;
+}
+
+video {display: block;}
+
+video {
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       min-width: 100%;
+       min-height: 100%;
+       width: auto;
+       height: auto;
+       z-index: -100;
+       -webkit-transform: translateX(-50%) translateY(-50%);
+       -moz-transform: translateX(-50%) translateY(-50%);
+       -ms-transform: translateX(-50%) translateY(-50%);
+       /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
+       /*background-size: cover;*/
+       /*transition: 1s opacity;*/
+
+}
+
+
+
+
+/*  =======================================
+                     Layouts
+    =======================================  */
+
+/*  ======================
+       Top
+    ======================  */
+
+
+
+
+#logo-top{
+       margin: 0 auto;
+
+
+}
+
+.logo {
+       width: 1180px;
+       padding: 20px 10px;
+       margin: 0 auto;
+       background: #000;
+       border-bottom: 2px solid #444;
+
+}
+
+#logo {
+       display: block;
+       margin: auto;
+}
+
+#top {
+       width: 1180px;
+       padding: 20px 10px;
+       margin: 0 auto;
+       border-bottom: 2px solid #444;
+       background: rgba(0,0,0,0.9);
+}
+
+
+
+#top-title {
+       margin: 60px 75px 0px;
+       color: #a1d7c2;
+}
+
+#top-prg {
+       margin: 10px 75px;
+       color: #fff;
+}
+
+#view-open-positions{
+       margin: 25px 75px 50px 75px;
+
+}
+
+/*  ======================
+       Blue
+    ======================  */
+
+#blue {
+       width: 1180px;
+       height: 375px;
+       padding: 60px 10px;
+       margin: 0 auto;
+       /*background: #6DB0CB;*/
+       background: rgba(110,176,203,0.9);
+}
+
+
+
+#blue-title {
+       margin: 0;
+       color: #fff;
+}
+
+#blue-prg {
+       margin: 0 75px ;
+       color: #fff;
+}
+
+
+/*  ======================
+       Green
+    ======================  */
+
+#green {
+       width: 1180px;
+       padding: 60px 10px;
+       margin: 0 auto;
+       background: #a1d7c2;
+       /*background: rgba(161,215,194,0.9);*/
+}
+
+#green-title {
+       margin: 30px 75px 0 75px;
+
+}
+
+#green-prg {
+       margin: 0 75px 0 75px;
+
+}
+
+#green-github {
+       width: 1000px;
+       padding: 10px;
+       margin: 55px  auto 25px;
+       background:#ffffff;
+}
+
+#github-feed {
+       display: block;
+       text-align: center;
+       cursor: pointer;
+       text-decoration: none;
+       color: #000;
+
+}
+
+
+/*  ======================
+       Gray2
+    ======================  */
+
+#gray2 {
+       width: 1180px;
+       padding: 60px 10px;
+       margin: 0 auto;
+       /*background: #444;*/
+       background: rgba(0,0,0,0.85);
+
+}
+
+#gray2-title {
+       margin: 30px 75px 0 75px;
+       color: #fff;
+
+}
+
+#gray2-prg {
+       margin: 0 75px 30px 75px;
+       color: #fff;
+}
+
+
+/*  ======================
+       Blue2
+    ======================  */
+
+#blue2 {
+       width: 1180px;
+       padding: 60px 10px;
+       margin: 0 auto;
+       height: 450px;
+       color: #fff;
+       background: rgba(110,176,203,0.9);
+
+}
+
+#blue2-container{
+       margin: 0;
+}
+
+#blue2 section {
+       float: left;
+       width: 500px;
+
+}
+
+#blue2-title {
+       margin: 0;
+
+}
+
+#blue2-prg {
+       margin: 0 0 25px 0;
+       padding-bottom: 75px;
+
+}
+
+
+#blue2 aside{
+       margin: 75px 75px 0 0px;
+       width: 350px;
+       float: right;
+       padding-bottom: 75px;
+}
+
+
+#blue2-list-title{
+       color: #000;
+       padding-top: 25px;
+       font-family: 'Montserrat', sans-serif;
+}
+
+#blue2-list2-title{
+       color: #000;
+       padding-top: 25px;
+       font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*  ======================
+       Tools
+    ======================  */
+
+#tools {
+       width: 1180px;
+       padding: 60px 10px;
+       margin: 0 auto;
+       background-color: #ffffff;
+       /*background: rgba(255,255,255,0.9);*/
+}
+
+#tools-title {
+       margin: 0 75px 0 75px;
+}
+
+#tools-logos {
+       margin: 30px 75px 0 75px;
+}
+
+
+
+#tools-logos img {
+       max-width: 75px;
+       max-height: 75px;
+       /*display: inline-flex;*/
+       /*margin: 0 auto;*/
+       padding: 25px 50px 25px 0;
+
+}
+/*  ======================
+       Green2
+    ======================  */
+
+#green2 {
+       width: 1180px;
+       padding: 60px 10px;
+       margin: 0 auto;
+       background: #a1d7c2;
+       /*background: rgba(161,215,194,0.9);*/
+}
+
+
+section{
+       margin: 30px 75px 0 75px;
+
+}
+
+/*#green2-title {*/
+       /*margin: 30px 75px 0 75px;*/
+
+/*}*/
+
+#green2-prg {
+       margin-bottom: 25px;
+}
+
+#green2-row{
+       margin: 0 75px 0 75px;
+}
+
+
+#jorge-img {
+       float: left;
+       margin-top: 8px;
+       margin-right: 25px;
+       padding-bottom: 75px;
+
+
+}
+
+#jorge-img img{
+       max-width: 325px;
+       max-height: 325px;
+}
+
+#jorge-name{
+       margin: 0;
+       padding: 0;
+       font-weight: bold;
+}
+
+#jorge-bio{
+       margin-bottom: 25px;
+}
+
+#jorge-logo{
+       margin-bottom: 75px;
+}
+
+#david-img {
+       float: left;
+       margin-right: 25px;
+       margin-top: 8px;
+
+}
+
+#david-img img{
+       max-width: 325px;
+       max-height: 325px;
+}
+
+#david-name{
+       margin: 0;
+       font-weight: bolder;
+}
+
+#david-bio{
+       margin-bottom: 25px;
+}
+
+#david-logo{
+       margin-bottom: 75px;
+}
+
+/*  ======================
+       Footer
+    ======================  */
+
+footer {
+       width: 1180px;
+       padding: 0 10px 60px 10px;
+       margin: 0 auto;
+       background: #000;
+       color: #fff;
+
+}
+#footer-row{
+       display: block;
+       margin: 0 50px;
+       padding: 25px 10px;
+
+
+}
+
+
+footer ul {
+       margin: 0;
+       padding: 0;
+       float: left;
+}
+footer ul li{
+       float: left;
+       display: block;
+       padding: 20px;
+}
+
+/*.column {*/
+       /*margin-right: 75px;*/
+
+/*}*/
+
+.column a{
+       float: right;
+       display: block;
+       padding: 4px;
+
+}
+
+
+/*  ======================
+       Buttons
+    ======================  */
+
+.button{
+       width: auto;
+       border: 2px solid #ffffff;
+       color: #ffffff;
+       cursor: pointer;
+       display: inline-block;
+
+       /* IE7 inline-block fix */
+       zoom: 1;
+       *display: inline;
+
+       margin: 0;
+       outline: none;
+       padding: 8px 15px 8px;
+       position: relative;
+       text-align: center;
+       text-decoration: none;
+
+}
+
+
+
+/*  ======================
+       Global Styles
+    ======================  */
+
+.clearfix:before,
+.clearfix:after{
+       content: '';
+       display: table;
+}
+
+.clearfix:after{
+       clear: both;
+}
+
+.clearfix{
+       zoom: 1;
+}
+
+
+
+
+@media all and (max-width: 1024px) {
+       video {
+              display:none;
+       }
+}
